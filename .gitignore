@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.pyc
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Mac
+.DS_Store
+
+# Environments
+.venv/
+venv/
+env/
+
+# Large data files
+data/raw/*
+data/cleaned/*
+data/exports/*
+
+# Model files
+models/*.pkl
+models/*.joblib
