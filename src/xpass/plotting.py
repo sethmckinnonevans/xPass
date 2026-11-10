@@ -143,6 +143,8 @@ def plot_xpass_map(
         if attempted else np.nan
     )
 
+    avg_xpass = (passes["xPass"].sum()) / attempted
+
     print(f"\n{player_name} vs {opposition}")
     print("-" * 40)
     print(f"Passes attempted: {attempted}")
@@ -150,6 +152,7 @@ def plot_xpass_map(
     print(f"Passing accuracy: {accuracy:.1f}%")
     print(f"Expected completions: {expected_completions:.2f}")
     print(f"Total PAx: {total_pax:+.2f}")
+    print(f"Average xPass: {avg_xpass:.2f}")
 
     # --------------------------------------------------
     # 5. Set up Plotly pitch
